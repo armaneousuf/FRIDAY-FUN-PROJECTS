@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.font-merriweather {
+  font-family: "Merriweather", serif;
+}
+
+.font-shadows {
+  font-family: "Shadows Into Light", cursive;
+}
+
+body {
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.optional-div {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.first-div {
+  background-color: #111111;
+  height: 200px;
+  position: relative;
+}
+
+.second-div {
+  background-color: #fff;
+  height: 600px;
+  margin-top: 5rem;
+  padding: 20px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 180px;
+  transform: translate(-50%, -50%);
+  transition: filter 0.3s linear;
+  z-index: 10;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+img:hover {
+  filter: grayscale(0);
+}
+
+.second-div > p {
+    text-align:  center;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}
+
+.sub-container {
+    max-width: 350px;
+}
+
+.sub-title {
+    font-size: 12px;
+    
+}
