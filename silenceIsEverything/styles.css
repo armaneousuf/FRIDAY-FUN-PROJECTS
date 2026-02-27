@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
-.font-merriweather {
-  font-family: "Merriweather", serif;
+.font-fira {
+  font-family: "Fira Code", monospace;
 }
 
-.font-shadows {
-  font-family: "Shadows Into Light", cursive;
+.font-garamond {
+   font-family: "Cormorant Garamond", serif;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -32,21 +32,20 @@ body {
 }
 
 .first-div {
-  background-color: #111111;
   height: 200px;
-  position: relative;
+  background: #111;
 }
 
 .second-div {
   background-color: #fff;
   height: 600px;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 20px;
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   position: absolute;
   left: 50%;
   top: 180px;
@@ -55,7 +54,8 @@ img {
   z-index: 10;
   filter: grayscale(100%);
   border-radius: 50%;
-  border: 2px solid #000;
+  border: 3px solid #fff;
+  padding: 6px;
 }
 
 img:hover {
@@ -63,16 +63,37 @@ img:hover {
 }
 
 .second-div > p {
-    text-align:  center;
-    font-size: 1.4rem;
-    letter-spacing: 3px;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
 }
 
 .sub-container {
-    max-width: 350px;
+  /* max-width: 500px; */
+  margin-top: 10px;
+  text-align: center;
 }
 
 .sub-title {
-    font-size: 12px;
-    
+  font-size: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;       
+  margin: 1.5rem 0;    
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  width: 50px;        /* fixed shorter length */
+  height: 1px;
+  background: #111;
+}
+
+.divider span {
+  letter-spacing: 2px;  /* optional spacing inside || */
 }
