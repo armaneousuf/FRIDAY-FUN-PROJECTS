@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .font-fira {
-  font-family: "Fira Code", monospace;
+  font-family: "Crimson Text", serif; 
 }
 
 .font-garamond {
    font-family: "Cormorant Garamond", serif;
 }
 
+::selection {
+  background-color: #000;
+  color: #F5F5F0;
+}
+
 body {
-  background-color: #fff;
+  background-color: #F9F8F6;
+  font-size: 13px;
 }
 
 * {
@@ -37,10 +42,8 @@ body {
 }
 
 .second-div {
-  background-color: #fff;
-  height: 600px;
-  margin-top: 3rem;
-  padding: 20px;
+  background-color: #F5F5F0;
+  padding: 3.5rem 1.25rem 1.25rem 1.25rem;
 }
 
 img {
@@ -50,11 +53,11 @@ img {
   left: 50%;
   top: 180px;
   transform: translate(-50%, -50%);
-  transition: filter 0.3s linear;
+  transition: all 1.3s ease-in-out;
   z-index: 10;
   filter: grayscale(100%);
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid #F5F5F0;
   padding: 6px;
 }
 
@@ -75,7 +78,8 @@ img:hover {
 }
 
 .sub-title {
-  font-size: 10px;
+  font-size: 11px;
+  text-align: justify; /* To justify text *Experimental* */
 }
 
 .divider {
@@ -96,4 +100,38 @@ img:hover {
 
 .divider span {
   letter-spacing: 2px;  /* optional spacing inside || */
+}
+
+.text {
+  text-indent: 3rem;
+  margin-top: 2rem;
+  text-align: justify;
+  /* color: #797979; */
+}
+
+.text-container .first-letter::first-letter {
+  display: inline-block;
+  vertical-align: sub;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 6px;
+  margin-right: 0.1em;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 4px;
+  background-color: #111;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #F5F5F0;
+  margin-left: 4px;
 }
