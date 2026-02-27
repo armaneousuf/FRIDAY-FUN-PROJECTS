@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
-.font-fira {
+.font-crimson {
   font-family: "Crimson Text", serif; 
 }
 
@@ -16,7 +16,7 @@
 
 body {
   background-color: #F9F8F6;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 * {
@@ -67,8 +67,9 @@ img:hover {
 
 .second-div > p {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.65rem;
   letter-spacing: 3px;
+  font-weight: 500;
 }
 
 .sub-container {
@@ -78,7 +79,7 @@ img:hover {
 }
 
 .sub-title {
-  font-size: 11px;
+  font-size: 13px;
   text-align: justify; /* To justify text *Experimental* */
 }
 
